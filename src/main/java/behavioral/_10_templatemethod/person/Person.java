@@ -1,4 +1,4 @@
-package behavioral._10_templatemethod.comparable;
+package behavioral._10_templatemethod.person;
 
 import lombok.*;
 

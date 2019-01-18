@@ -1,12 +1,10 @@
-package behavioral._10_templatemethod.comparable;
-
-import lombok.extern.log4j.Log4j2;
+package behavioral._10_templatemethod.person;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class TemplateMethodDemo {
+public class PersonClient {
 
     public static void main(String[] args) {
         List<Person> people = new ArrayList<>();
