@@ -2,10 +2,12 @@ package behavioral._05_mediator.light;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Log4j2
 public class Light {
+
+    private static final Logger log = LogManager.getLogger(Light.class);
 
     @Getter @Setter
     private String name;
@@ -19,12 +21,12 @@ public class Light {
 
     public void on() {
         isOn = true;
-        log.info("The {} light is on", name );
+        log.info("The {} light is on" + name );
     }
 
     public void off() {
         isOn = false;
-        log.info("The {} light is off", name );
+        log.info("The {} light is off" + name );
     }
 
     public void toggle() {

@@ -1,9 +1,11 @@
 package behavioral._06_memento.employee;
 
-import lombok.extern.log4j.Log4j2;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-@Log4j2
 public class EmployeeClient {
+
+    private static final Logger log = LogManager.getLogger(EmployeeClient.class);
 
     public static void main(String[] args) {
         Employee emp = Employee.builder()
