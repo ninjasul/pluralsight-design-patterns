@@ -1,4 +1,4 @@
-package creational._01_singleton;
+package creational._01_singleton.dbsingleton;
 
 public class DbSingleton {
 
