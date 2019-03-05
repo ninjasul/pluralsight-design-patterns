@@ -19,7 +19,7 @@ public class Printer {
         return instance;
     }
 
-    public static void print(String str) {
+    public static synchronized void print(String str) {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
