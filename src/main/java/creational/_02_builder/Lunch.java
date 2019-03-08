@@ -46,7 +46,7 @@ public class Lunch {
         private String dressing;
         private String meat;
 
-        public LunchBuilder() {}
+        private LunchBuilder() {}
 
         public LunchBuilder bread(String bread) {
             this.bread = bread;

@@ -7,12 +7,11 @@ public class ItemDemo {
         Registry registry = new Registry();
         Movie movie = (Movie) registry.createItem("Movie");
         movie.setTitle("Creational Patterns in Java");
-
+        movie.getKeywords().set(1, "II");
         printMovie(movie);
 
         Movie anotherMovie = (Movie) registry.createItem("Movie");
         anotherMovie.setTitle("Gang of Four");
-
         printMovie(anotherMovie);
     }
 
@@ -21,5 +20,6 @@ public class ItemDemo {
         System.out.println(movie.getRuntime());
         System.out.println(movie.getTitle());
         System.out.println(movie.getUrl());
+        System.out.println(movie.getKeywords());
     }
 }
