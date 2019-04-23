@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class EmployeeAdapterLdap implements Employee {
 
-    private EmployeeLdap instance;
+    private final EmployeeLdap instance;
 
     @Override
     public String getId() {

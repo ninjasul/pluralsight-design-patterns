@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class EmployeeAdapterCSV implements Employee {
 
-    private EmployeeCSV instance;
+    private final EmployeeCSV instance;
 
     @Override
     public String getId() {
